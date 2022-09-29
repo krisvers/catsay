@@ -2,6 +2,6 @@
 
 ## A terrible program made by me!
 
-## Provide 1 arg and the cat will say it!
+### Provide 1 arg and the cat will say it!
 
-## Check out [Makefile]
+### Check out the Makefile
