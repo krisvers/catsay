@@ -31,16 +31,16 @@ int main(int argc, char ** argv)
 	unsigned char vpos = 0;
 
 	printf("\n ");
-	for (unsigned char i = 1; i <= strlen(argv[2]); i++)
+	for (unsigned char i = 1; i <= strlen(argv[1]); i++)
 	{
 		printf("_");
 	}
 	printf(" \n(");
-	printf("%s", argv[2]);
+	printf("%s", argv[1]);
 	printf(")\n(");
-	for (unsigned char i = 1; i <= strlen(argv[2]); i++)
+	for (unsigned char i = 1; i <= strlen(argv[1]); i++)
 	{
-		if (i != strlen(argv[2])-1)
+		if (i != strlen(argv[1])-1)
 		{
 			printf("_");
 		}
@@ -49,9 +49,9 @@ int main(int argc, char ** argv)
 		}
 	}
 	printf(")\n ");
-	for (unsigned char i = 1; i <= strlen(argv[2]); i++)
+	for (unsigned char i = 1; i <= strlen(argv[1]); i++)
 	{
-		if (i != strlen(argv[2])-1 && strlen(argv[2]) > 1)
+		if (i != strlen(argv[1])-1 && strlen(argv[1]) > 1)
 		{
 			printf(" ");	
 		}
