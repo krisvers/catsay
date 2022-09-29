@@ -38,7 +38,7 @@ int main(int argc, char ** argv)
 	printf(" \n(");
 	printf("%s", argv[2]);
 	printf(")\n(");
-	for (unsigned char = 1; i <= strlen(argv[2]); i++)
+	for (unsigned char i = 1; i <= strlen(argv[2]); i++)
 	{
 		if (i != strlen(argv[2])-1)
 		{
@@ -49,7 +49,7 @@ int main(int argc, char ** argv)
 		}
 	}
 	printf(")\n ");
-	for (unsigned char i = 1; it <= strlen(argv[2]); i++)
+	for (unsigned char i = 1; i <= strlen(argv[2]); i++)
 	{
 		if (i != strlen(argv[2])-1 && strlen(argv[2]) > 1)
 		{
