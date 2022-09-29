@@ -1,12 +1,12 @@
 CC := gcc
-BUILD_DIR := build
+BUILD_DIR := build/
 
 .PHONY: all build clean
 
 all: clean build
 
 build:
-	$(CC) main.c -o $(BUILD_DIR)/catsay
+	$(CC) main.c -o $(BUILD_DIR)catsay
 
 clean:
 	rm -rf $(BUILD_DIR)
