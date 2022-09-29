@@ -28,43 +28,40 @@ int main(int argc, char ** argv)
 		return -1;
 	}
 
-	for (int i = 1; i < argc; i++)
-	{
-		unsigned char vpos = 0;
+	unsigned char vpos = 0;
 
-		printf("\n ");
-		for (int it = 1; it <= strlen(argv[i]); it++)
+	printf("\n ");
+	for (unsigned char i = 1; i <= strlen(argv[2]); i++)
+	{
+		printf("_");
+	}
+	printf(" \n(");
+	printf("%s", argv[2]);
+	printf(")\n(");
+	for (unsigned char = 1; i <= strlen(argv[2]); i++)
+	{
+		if (i != strlen(argv[2])-1)
 		{
 			printf("_");
 		}
-		printf(" \n(");
-		printf("%s", argv[i]);
-		printf(")\n(");
-		for (int it = 1; it <= strlen(argv[i]); it++)
-		{
-			if (it != strlen(argv[i])-1)
-			{
-				printf("_");
-			}
-			else {
-				printf(" ");
-			}
+		else {
+			printf(" ");
 		}
-		printf(")\n ");
-		for (int it = 1; it <= strlen(argv[i]); it++)
-		{
-			if (it != strlen(argv[i])-1 && strlen(argv[i]) > 1)
-			{
-				printf(" ");
-			}
-			else {
-				vpos = it;
-				printf("v");
-			}
-		}
-		printf("\n");
-		printcat(&vpos);
 	}
+	printf(")\n ");
+	for (unsigned char i = 1; it <= strlen(argv[2]); i++)
+	{
+		if (i != strlen(argv[2])-1 && strlen(argv[2]) > 1)
+		{
+			printf(" ");	
+		}
+		else {
+			vpos = i;
+			printf("v");
+		}
+	}
+	printf("\n");
+	printcat(&vpos);
 
 	return 0;
 }
