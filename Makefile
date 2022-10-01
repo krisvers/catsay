@@ -1,5 +1,4 @@
 CC := gcc
-BUILD_DIR := build/
 PREFIX := /usr
 
 .PHONY: all build install
