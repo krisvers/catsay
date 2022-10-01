@@ -1,13 +1,13 @@
 CC := gcc
 BUILD_DIR := build/
+PREFIX := /usr
 
-.PHONY: all build clean
+.PHONY: all build install
 
-all: clean build
+all: build
 
 build:
-	$(CC) main.c -o $(BUILD_DIR)catsay
+	$(CC) main.c -o catsay
 
-clean:
-	rm -rf $(BUILD_DIR)
-	mkdir $(BUILD_DIR)
+install:
+	cp catsay $(PREFIX)/bin/
