@@ -19,5 +19,5 @@ build() {
 
 package() {
 	cd $pkgname-$pkgver
-	make PREFIX=/usr install
+	sudo make PREFIX=/usr install
 }
