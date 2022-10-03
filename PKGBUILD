@@ -1,6 +1,6 @@
 # Maintainer: Nicholas Kelly at https://github.com/krisvers
 
-pkgver=1.0
+pkgver=1.1
 pkgrel=1
 pkgname=catsay
 pkgdesc="Cowsay but cat. Written in C with standard libraries."
