@@ -37,6 +37,7 @@
 #include <stdio.h>
 #include <string.h>
 
+// Default character
 const char * cat[7] = {" ^__^\n","(,  ,)\n",">/7Y/<\n","(    )\n","| __ |\n","| || |\n","[_][_]\n"};
 
 void printcat(unsigned char * vpos)
@@ -55,13 +56,19 @@ int main(int argc, char ** argv)
 {
 	if (argc < 2)
 	{
-		printf("One argument required!\n");
+		printf("Check out %s -h or %s --help\n", argv[0], argv[0]);
 		return -1;
 	}
-	if (argc > 2)
+	if (argc > 3)
 	{
-		printf("Only one argument required\n  USAGE: catsay <words>\nIt's recommended to put the words in quotes so the words get sent as one argument.\n");
+		printf("Check out %s -h or %s --help\n", argv[0], argv[0]);
 		return -1;
+	}
+
+	if (strcmp(argv[1], "-h") == 0 || strcmp(argv[1], "--help") == 0)
+	{
+		printf("USAGE: %s <words>\n", argv[0]);
+		return 0;
 	}
 
 	unsigned char vpos = 0;
